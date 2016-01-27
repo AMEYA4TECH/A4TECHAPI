@@ -18,7 +18,6 @@ public class LoginServiceImpl implements LoginService {
 
 	@Override
 	public AccessBean doLogin(Login login) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 

@@ -20,6 +20,13 @@
 		
 		<mvc:annotation-driven/> 
 		
+		
+		<bean id="loginService"  class="com.a4.login.service.impl.LoginServiceImpl" autowire="byName">
+		<property name="restTemplateClass" ref="restTemplate"></property>
+		<property name="loginApiURL" value="${login.endpoint.v2}"></property>
+		</bean>
+		
+		
 		<bean id="restTemplate" class="org.springframework.web.client.RestTemplate">
 	        <property name="messageConverters">
 	            <list>
