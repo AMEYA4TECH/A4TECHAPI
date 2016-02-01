@@ -15,4 +15,15 @@
       <servlet-name>Spring</servlet-name>
       <url-pattern>/</url-pattern>
    </servlet-mapping>
+   
+ 	 <!--  <filter>
+		<filter-name>cors</filter-name>
+		<filter-class>com.a4.util.ApiCORSFilter</filter-class>
+	</filter>
+
+<filter-mapping>
+		<filter-name>cors</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	   -->
 </web-app>

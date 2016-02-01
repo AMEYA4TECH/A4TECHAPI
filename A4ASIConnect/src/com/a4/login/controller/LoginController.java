@@ -38,7 +38,7 @@ public class LoginController {
 	@RequestMapping(method = RequestMethod.POST, headers = "content-type=application/json, application/xml", produces = {
             "application/xml", "application/json" })
     public ResponseEntity<?> getAccessToken(HttpEntity<Login> requestEntity) throws Exception {
-       System.out.println("In login");
+		_LOGGER.info("In Login Controller");
 		AccessBean response = null;
         
         try {
