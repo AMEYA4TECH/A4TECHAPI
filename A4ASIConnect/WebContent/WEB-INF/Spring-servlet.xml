@@ -26,6 +26,10 @@
 		<property name="loginApiURL" value="${login.endpoint.v2}"></property>
 		</bean>
 		
+	    <bean id="getService"  class="com.a4.product.get.service.impl.GetServiceImpl" autowire="byName">
+		<property name="restTemplateClass" ref="restTemplate"></property>
+		<property name="getApiURL" value="${product.get.v2}"></property>
+		</bean>
 		
 		<bean id="restTemplate" class="org.springframework.web.client.RestTemplate">
 	        <property name="messageConverters">
