@@ -55,9 +55,7 @@ public class Product {
     @JsonProperty("SEOFlag")
     @XmlElement(name = "SEOFlag")
     private boolean seoFlag;
-    @JsonProperty("DistributorViewOnly")
-    @XmlElement(name="DistributorViewOnly")
-    private boolean distributorViewOnly;
+    
     @JsonProperty("LineNames")
     @XmlElementWrapper(name = "LineNames")
     @XmlElement(name = "LineName")
@@ -128,15 +126,6 @@ public class Product {
 
 	public void setInventory(Inventory inventory) {
 		this.inventory = inventory;
-	}
-	
-	
-	public boolean isDistributorViewOnly() {
-		return distributorViewOnly;
-	}
-
-	public void setDistributorViewOnly(boolean distributorViewOnly) {
-		this.distributorViewOnly = distributorViewOnly;
 	}
 
 	public String getProductLevelSku() {
