@@ -31,6 +31,13 @@
 		<property name="getApiURL" value="${product.get.v2}"></property>
 		</bean>
 		
+		<bean id="postService"  class="com.a4.product.post.service.impl.PostServiceImpl" autowire="byName">
+		<property name="product2" ref="product"></property>
+		<property name="restTemplateClass" ref="restTemplate"></property>
+		<property name="postApiURL" value="${product.post.v2}"></property>
+		</bean>
+		<bean id="product" class="com.a4.product.beans.Product"/>
+		
 		<bean id="restTemplate" class="org.springframework.web.client.RestTemplate">
 	        <property name="messageConverters">
 	            <list>
