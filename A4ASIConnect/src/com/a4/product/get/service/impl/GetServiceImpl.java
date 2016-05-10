@@ -60,7 +60,8 @@ public class GetServiceImpl implements GetService {
 					+ response.getStatusCode());
 
 		} catch (Exception e) {
-			e.printStackTrace();
+			//e.printStackTrace();
+			_LOGGER.info("Error while doing a get for product: " + xid +" " +e.getMessage(),e);
 		}
 		return product;
 	}

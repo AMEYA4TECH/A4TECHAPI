@@ -48,7 +48,7 @@ public class GetController {
             productResponse = getService.doGet(authToken, xid);
             
         } catch (RuntimeException re) {
-        	
+        	_LOGGER.error("Error while performing GET "+re.getMessage());
         } 
         totalTime = System.currentTimeMillis() - totalTime;
         

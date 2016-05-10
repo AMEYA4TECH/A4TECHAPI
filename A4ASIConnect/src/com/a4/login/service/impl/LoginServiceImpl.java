@@ -69,7 +69,8 @@ public class LoginServiceImpl implements LoginService {
             
         
         } catch (Exception e) {
-            e.printStackTrace();
+          //  e.printStackTrace();
+        	_LOGGER.error("Error while doing login "+e.getMessage(),e);
         }
         
         return accessBean;

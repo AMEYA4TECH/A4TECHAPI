@@ -53,7 +53,7 @@ public class LoginController {
             }
          
         } catch (Exception e) {
-            
+        	_LOGGER.error("Error while doing Login: " +e.getMessage(),e);
         }
         return null;
     }
